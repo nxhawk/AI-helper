@@ -1,6 +1,6 @@
 # AI (use python3)
 
-Trợ lý ảo hỗ trợ coder.
+Trợ lý ảo hỗ trợ cho coder.
 
 
 Bạn có thể nói thứ bạn cần, AI sẽ hỗ trợ cho bạn.
