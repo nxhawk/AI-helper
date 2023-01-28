@@ -1,0 +1,33 @@
+{
+  "monday":[
+    {"hour": "7","minute":"0", "subject":"A"},
+    {"hour": "9","minute":"45", "subject":"B F"},
+    {"hour": "10","minute":"30", "subject":"Toán"}
+  ],
+  "tuesday":[
+    {"hour": "10","minute":"30", "subject":"thực hành môn 1"},
+    {"hour": "7","minute":"0", "subject":"thực hành 2"},
+    {"hour": "7","minute":"45", "subject":"Toán abc"}
+  ],
+  "wednesday":[
+    {"hour": "7","minute":"0", "subject":"A"},
+    {"hour": "9","minute":"45", "subject":"B F"},
+    {"hour": "10","minute":"30", "subject":"Toán"}
+  ],
+  "thursday":[
+    {"hour": "7","minute":"0", "subject":"A"},
+    {"hour": "9","minute":"45", "subject":"B F"},
+    {"hour": "10","minute":"30", "subject":"Toán"}
+  ],
+  "friday":[
+    {"hour": "7","minute":"0", "subject":"A"},
+    {"hour": "9","minute":"45", "subject":"B F"},
+    {"hour": "10","minute":"30", "subject":"Toán"}
+  ],
+  "saturday":[
+    {"hour": "7","minute":"0", "subject":"A"},
+    {"hour": "9","minute":"45", "subject":"B F"},
+    {"hour": "10","minute":"30", "subject":"Toán"}
+  ],
+  "sunday":[]
+}
