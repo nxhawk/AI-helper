@@ -1,12 +1,9 @@
 import datetime
 from datetime import date
 import requests
-from wallpaper import set_wallpaper, get_wallpaper
 import os
 import regex
-import sys
 import time
-from bs4 import BeautifulSoup
 import ctypes
 import wikipedia
 import speech_recognition as sr
@@ -319,15 +316,6 @@ def main_brain():
             timetable(text)
         elif "hình nền" in text:
             change_wallpaper()
-
-    # timetable("cuối")
-    # change_wallpaper()
-    # play_youtube()
-    # current_weather()
-    #open_google_and_search("kiếm tìm kiếm nhị phân")
-    #open_website("mở github")
-    # open_application("cmd")
-    #speak("Xin chào, Nguyễn Nhật Hào!")
 
 
 if __name__ == '__main__':
