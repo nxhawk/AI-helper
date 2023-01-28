@@ -1,0 +1,6 @@
+youtube_search
+playsound==1.2.2
+gTTS
+wikipedia
+speech_recognition
+webbrowser
