@@ -17,3 +17,8 @@ Bạn có thể nói thứ bạn cần, AI sẽ hỗ trợ cho bạn.
 * Kiểm tra thời khóa biểu của bạn (file "timetable.json" sẽ chứa thông tin này, sử dụng cụm từ "thời khóa biểu, lịch, khóa biểu").
 * Thay đổi ảnh nền (lấy random ảnh trên unsplash) của desktop.
 * Mở một bản nhạc bằng youtube (sử dụng cụm từ "bài hát, bài, nhạc").
+
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/92797788/215306056-11d67ee3-1490-422f-8051-b3763f1a5caa.png)
