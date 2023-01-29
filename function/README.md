@@ -1,4 +1,4 @@
-# AUTO START MINESWEEPER
+# Auto Start Minesweeper
 
   Read Document [here](https://pyautogui.readthedocs.io/en/latest/index.html).
 
