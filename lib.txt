@@ -4,3 +4,4 @@ gTTS
 wikipedia
 speech_recognition
 webbrowser
+pyautogui
