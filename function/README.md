@@ -21,3 +21,9 @@
 
 ## 3. Note
   Khi run code game sẽ tự động bắt đầu lại.
+  
+  Vì chưa thử trên nhiều thiết bị (laptop/desktop) nên có thể sẽ có lỗi xảy ra.
+  
+  Nếu gặp lỗi thì hãy chạy lại chương trình lần nữa.
+  
+  Nếu bạn chạy 5->10 lần mà vẫn lỗi thì bạn có thể sửa lại [code](https://github.com/nxhawk/AI-helper/blob/master/function/auto_game.py) để phù hợp với thiết bị của bạn. 
