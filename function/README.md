@@ -1,5 +1,7 @@
 # Auto Start Minesweeper
 
+  Chương trình đơn giản với pyautogui. Giúp bạn tự động chọn (mở) ngẫu nhiên các ô khi bắt đầu game minesweeper. 
+  
   Read Document [here](https://pyautogui.readthedocs.io/en/latest/index.html).
 
 ## 1. Run terminal
