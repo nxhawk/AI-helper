@@ -39,9 +39,9 @@ def get_audio():
         audio = ear_robot.record(source, duration=4)
 
         try:
-            print(("[AI] :  ...  "))
+            print("[AI]: ...  ")
             text = ear_robot.recognize_google(audio, language="vi-VN")
-            print("[Me]:  ", text)
+            print("[Me]: "+text)
             return text
         except Exception as ex:
             print("[AI]: Lỗi Rồi ! ... !")
@@ -63,7 +63,7 @@ def get_audio_2():
 
 
 def stop():
-    speak("Hẹn gặp lại sau nha ! ... ")
+    speak("Hẹn gặp lại sau nha!... ")
 
 
 def get_text():
@@ -137,7 +137,6 @@ def open_application(text):
 
 def open_website(text):
     reg_ex = regex.search('mở (.+)', text)
-    print(reg_ex)
     if reg_ex:
         domain = reg_ex.group(1)
         url = "https://www." + domain+".com"
@@ -155,7 +154,6 @@ def open_google_and_search(text):
         search_for = str(text).split("kiếm", 1)[1]
     else:
         search_for = text
-    print(search_for)
     url = f"https://www.google.com/search?q={search_for}"
     webbrowser.get().open(url)
     speak("Đây là thông tin bạn cần tìm")
@@ -186,10 +184,15 @@ def play_youtube():
     webbrowser.get().open(url)
     speak("Đây là thứ mà tôi tìm được bạn xem qua nhé")
 
+# find and choose one video in first selection
 
-def play_youtube_2():
-    speak("Nói nội dung bạn muốn tìm trên youtube")
-    search = get_text()
+
+def play_youtube_2(text=None):
+    if (text is None):
+        speak("Nói nội dung bạn muốn tìm trên youtube")
+        search = get_text()
+    else:
+        search = text
     while True:
         result = YoutubeSearch(search, max_results=10).to_dict()
         if result:
@@ -197,7 +200,6 @@ def play_youtube_2():
     url = f"https://www.youtube.com" + result[0]['url_suffix']
     webbrowser.get().open(url)
     speak("Đây là thứ mà tôi tìm được bạn xem qua nhé")
-    print(result)
 
 
 def change_wallpaper():
@@ -248,7 +250,6 @@ def parse_thu(today):
 def timetable(text):
     with open('timetable.json', encoding='utf-8') as fh:
         data = json.load(fh)
-    # print(len(data['monday']))
     today = date.today().weekday()
     if "now" in text or "nay" in text:
         pass
@@ -282,6 +283,10 @@ def timetable(text):
         speak(st)
 
 
+def thanks():
+    speak("không có gì, giúp được bạn là niềm vui của tôi")
+
+
 def main_brain():
     hello("Hào")
     speak(f"Bạn cần tôi giúp gì không ?")
@@ -292,26 +297,36 @@ def main_brain():
         elif ('tạm biệt' in text) or ('hẹn gặp lại' in text):
             stop()
             break
+        elif "cảm ơn" in text:
+            thanks()
         elif "mấy giờ" in text or "bây giờ" in text or "hôm nay" in text or "hiện tại" in text or "ngày nào" in text:
             get_time(text)
+        elif "bài hát" in text or "nhạc" in text or "bài" in text:
+            play_youtube_2(text)
+            if input("press to continue: "):
+                pass
         elif "mở" in text:
             if "trang" in text:
                 open_website(text)
             else:
                 open_application(text)
+                if input("press to continue: "):
+                    pass
         elif 'youtube' in text:
             speak("Bạn muốn tìm kiếm đơn giản hay phức tạp")
             yeu_cau = get_text()
             if "đơn giản" in yeu_cau:
                 play_youtube()
-                if input():
+                if input("press to continue: "):
                     pass
             elif "phức tạp" in yeu_cau:
                 play_youtube_2()
-                if input("Tiếp tục y/n: ") == "y":
+                if input("press to continue: "):
                     pass
         elif "tìm kiếm" in text or "search" in text or "thế nào" in text or "là gì" in text or "khi nào" in text or "ở đâu" in text:
             open_google_and_search(text)
+            if input("press to continue: "):
+                pass
         elif "thời khóa biểu" in text or "khóa biểu" in text or "lịch" in text:
             timetable(text)
         elif "hình nền" in text:
