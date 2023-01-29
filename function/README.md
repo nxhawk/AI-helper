@@ -26,4 +26,6 @@
   
   Nếu gặp lỗi thì hãy chạy lại chương trình lần nữa.
   
-  Nếu bạn chạy 5->10 lần mà vẫn lỗi thì bạn có thể sửa lại [code](https://github.com/nxhawk/AI-helper/blob/master/function/auto_game.py) để phù hợp với thiết bị của bạn. 
+  Nếu bạn chạy 5->10 lần mà vẫn lỗi thì bạn có thể sửa lại [code](https://github.com/nxhawk/AI-helper/blob/master/function/auto_game.py) để phù hợp với thiết bị của bạn.
+  
+  Hay có thể do kích thước của image không phù hợp, bạn hãy thay đổi kích thước image cho phù hợp theo [link](https://github.com/nxhawk/AI-helper/tree/master/function/img). 
