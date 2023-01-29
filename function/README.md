@@ -1,5 +1,7 @@
 # AUTO START MINESWEEPER
 
+  Read Document [here](https://pyautogui.readthedocs.io/en/latest/index.html).
+
 ## 1. Run terminal
   ![image](https://user-images.githubusercontent.com/92797788/215349866-edce63ca-5fcc-4c22-b8c3-06365ccb2310.png)
   
