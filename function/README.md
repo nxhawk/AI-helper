@@ -24,6 +24,8 @@
 ## 3. Note
   Khi run code game sẽ tự động bắt đầu lại.
   
+  Đảm bảo web game phải full màn hình, board game phải hiển thị đầy đủ không bị che.
+  
   Vì chưa thử trên nhiều thiết bị (laptop/desktop) nên có thể sẽ có lỗi xảy ra.
   
   Nếu gặp lỗi thì hãy chạy lại chương trình lần nữa.
