@@ -101,7 +101,7 @@ def get_time(text):
     elif "ngày" in text:
         speak(f"hôm nay là ngày {now.day} tháng {now.month} năm {now.year}")
     else:
-        speak("Lý Hành chưa hiểu ý bạn.")
+        speak("Trợ lí ảo chưa hiểu ý của bạn.")
 
 
 def open_application(text):
