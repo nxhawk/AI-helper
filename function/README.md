@@ -17,7 +17,8 @@
   * 3. Run terminal như trên.
   * 4. Nhập số ô bạn muốn mở (mặc định 10 lần).
   * 5. Chuyển vào trang web game (trong vòng <b>2s</b> sau khi run terminal).
-  * 6. Play game. Done!!!.
+  * 6. Chờ chương trình thực thi xong.
+  * 7. Play game. Done!!!.
 
 ## 3. Note
   Khi run code game sẽ tự động bắt đầu lại.
